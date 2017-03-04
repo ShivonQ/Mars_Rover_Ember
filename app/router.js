@@ -6,7 +6,7 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('rove_home');
+  this.route('rover_home');
 });
 
 export default Router;
