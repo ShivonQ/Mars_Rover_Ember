@@ -9,7 +9,6 @@ Router.map(function() {
   this.route('user');
   this.route('rover_manifest');
   this.route('fave_img');
-  this.route('users');
   this.route('image');
   this.route('camera');
 });
