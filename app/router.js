@@ -10,6 +10,8 @@ Router.map(function() {
   this.route('rover_manifest');
   this.route('fave_img');
   this.route('users');
+  this.route('image');
+  this.route('camera');
 });
 
 export default Router;

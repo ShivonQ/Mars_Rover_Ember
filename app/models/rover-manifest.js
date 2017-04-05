@@ -8,5 +8,7 @@ export default DS.Model.extend({
   maxSol: DS.attr('number'),
   maxDate: DS.attr('string'),
   portrait: DS.attr('string'),
-  totalPhotos: DS.attr('number')
+  totalPhotos: DS.attr('number'),
+
+    cameras: DS.hasMany('camera')
 });
