@@ -14,7 +14,6 @@ Router.map(function() {
   this.route('camera');
 
   this.route('rover-manifests');
-    this.route('rover_manifest');
 });
 
 export default Router;
