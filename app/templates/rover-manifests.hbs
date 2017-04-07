@@ -1,0 +1,7 @@
+{{outlet}}
+<ul class="all-minis">
+    {{#each model as |rover-manifest|}}
+        <!--mini-manifest is a component, included is a small cropped image of the rover, a name, and the status-->
+        {{mini-manifest rover-manifest=rover-manifest}}
+    {{/each}}
+</ul>

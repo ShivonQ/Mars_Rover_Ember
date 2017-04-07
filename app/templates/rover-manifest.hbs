@@ -1,1 +1,17 @@
 {{outlet}}
+<h3>{{model.name}}</h3>
+<img id="rover-portrait" src="assets/images/{{model.portrait}}">
+<Strong>Biography</Strong>: The {{model.name}} rover was launched on {{model.launchDate}} by NASA.
+It arrived at mars after months of travel and successfully landed on {{model.landingDate}}.
+It's mission is currently {{model.status}} and has taken {{model.totalPhotos}} in it's illustrious extra-planetary career.
+{{model.name}}'s last batch of images were taken on {{model.maxDate}} which is Sol {{model.maxSol}}
+(A Sol is a martian day equivalent to 24 hours, 39 minutes, and 35.244 seconds.)
+
+<h4>Cameras on the {{model.name}} rover</h4>
+<ul>
+    {{#each model.cameras as |camera|}}
+        {{camera.fullName}}
+
+    {{/each}}
+</ul>
+<!--TODO: Number of Cameras & List them-->
