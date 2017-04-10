@@ -38,6 +38,9 @@ a {
 /*}*/
 
 .modal {
+    /*position: relative;*/
+    /*padding: 10px;*/
+
     width: 20em;
     height: 15em;
     position: fixed;

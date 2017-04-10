@@ -5,11 +5,11 @@
 </h4>
 
 {{#if isShowingModal}}
-    {{#modal-dialog close="close" clickOutsideToClose=true translucentOverlay = true targetAttachment="center"}}
+    {{#modal-dialog close="close" clickOutsideToClose=true target='div.ember-view'}}
         <div class="modal">
             <h3>Select a date for {{model.name}}'s images.</h3>
             <label id="pikaday-modal-picker">
-                {{pikaday-input theme="dark-theme" is-hidden=false format="YYYY-MM-DD" placeholder="Select An Earth Date" minDate=model.landingDate maxDate=model.maxDate}}
+                {{pikaday-input is-hidden=false format="YYYY-MM-DD" placeholder="Select An Earth Date" minDate=model.landingDate maxDate=model.maxDate}}
             </label>
             <!--TODO: Make this post to the Rails API, check for saved data on that date for that rover, and if not then make request of NASA-->
             <label class="btn-primary" {{action "close"}}>Get Images</label>

@@ -6,6 +6,7 @@ export default Ember.Component.extend({
         open(){
             this.set('isShowingModal', true);
             this.get('blurBackground')(true);
+            console.log(this)
         },
         close() {
             this.set('isShowingModal',false);
