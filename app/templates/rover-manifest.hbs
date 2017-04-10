@@ -17,6 +17,23 @@ It's mission is currently {{model.status}} and has taken {{model.totalPhotos}} p
     {{/each}}
 </ol>
 
+<h4 class="btn-primary btn-block" {{action "open"}}>
+    <span class="glyphicon glyphicon-camera"></span>
+    &nbsp;Search Rover Photos&nbsp;
+    <span class="glyphicon glyphicon-camera"></span>
+</h4>
+
+{{if isShowingModal}}
+{{#modal-dialog close="close" clickOutsideToClose=true}}
+    <div class="image-modal">
+        <h3>Select a date for {{model.name}}'s images.</h3>
+        <label id="pikaday-modal-picker">
+        {{pikaday-input theme="dark-theme" format="YYYY-MM-DD" placeholder="Select An Earth Date" minDate=model.landingDate maxDate=model.maxDate}}
+        </label>
+        <!--TODO: Make this post to the Rail API, check for saved data on that date for that rover, and if not then make request of NASA-->
+        <label class="btn-primary" {{action}}></label>
+    </div>
+{{/modal-dialog}}
 
 <!--TODO: Image Search MODAL? -->
 <!--A few options  https://www.emberobserver.com/addons/ember-pikaday  [PIKDAY] -->
