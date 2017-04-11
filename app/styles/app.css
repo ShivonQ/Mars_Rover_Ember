@@ -37,33 +37,33 @@ a {
     /*color: #111;*/
 /*}*/
 
-.modal {
-    /*position: relative;*/
-    /*padding: 10px;*/
+/*.modal {*/
+    /*!*position: relative;*!*/
+    /*!*padding: 10px;*!*/
 
-    width: 20em;
-    height: 15em;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    margin-top: -7.5em;
-    margin-left: -10em;
-    padding: 1em;
-    background-color: #f1c40f;
-    border-radius: 5px;
-    text-align: center;
-    z-index: 11; /* 1px higher than the overlay layer */
-    opacity: 1 !important;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    -webkit-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.28);
-    -moz-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.28);
-    box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.28);
-    -webkit-transition: opacity 400ms ease-in;
-    -moz-transition: opacity 400ms ease-in;
-    transition: opacity 400ms ease-in;
-}
+    /*width: 20em;*/
+    /*height: 15em;*/
+    /*position: fixed;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*margin-top: -7.5em;*/
+    /*margin-left: -10em;*/
+    /*padding: 1em;*/
+    /*background-color: #f1c40f;*/
+    /*border-radius: 5px;*/
+    /*text-align: center;*/
+    /*z-index: 11; !* 1px higher than the overlay layer *!*/
+    /*opacity: 1 !important;*/
+    /*-webkit-border-radius: 4px;*/
+    /*-moz-border-radius: 4px;*/
+    /*border-radius: 4px;*/
+    /*-webkit-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.28);*/
+    /*-moz-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.28);*/
+    /*box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.28);*/
+    /*-webkit-transition: opacity 400ms ease-in;*/
+    /*-moz-transition: opacity 400ms ease-in;*/
+    /*transition: opacity 400ms ease-in;*/
+/*}*/
 
 .blur-background {
     z-index: -999;

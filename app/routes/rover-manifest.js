@@ -6,4 +6,5 @@ export default Ember.Route.extend({
         return this.store.findRecord('rover-manifest', params.rover_manifest_id);
     }
 
+
 });

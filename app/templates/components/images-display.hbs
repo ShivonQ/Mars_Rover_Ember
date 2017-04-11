@@ -1,1 +1,10 @@
 {{yield}}
+{{#carousel-container}}
+    {{#carousel-body}}
+        {{#each model.image as |image|}}
+            {{#carousel-item}}
+                <img src="{{image.url}}">
+            {{/carousel-item}}
+        {{/each}}
+    {{/carousel-body}}
+{{/carousel-container}}

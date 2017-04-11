@@ -11,5 +11,6 @@ export default DS.Model.extend({
   miniPortrait:DS.attr('string'),
   totalPhotos: DS.attr('number'),
 
-    cameras: DS.hasMany('camera')
+    cameras: DS.hasMany('camera'),
+    imaqes:DS.hasMany('images')
 });
