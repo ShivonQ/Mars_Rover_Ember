@@ -18,10 +18,10 @@ It's mission is currently {{model.status}} and has taken {{model.totalPhotos}} p
     {{/each}}
 </ul>
 
-{{images-display model=model}}
+{{images-display model=model.images rover=model}}
 <!--...TODO: /FLEXBOX HERE...-->
 
-<!--{{rover-search-modal model=model blurBackground=(route-action "blurBackground")}}-->
+
 
     <!--TODO: Image Search MODAL? -->
 <!--A few options  https://www.emberobserver.com/addons/ember-pikaday  [PIKDAY] -->

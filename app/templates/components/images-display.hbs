@@ -1,10 +1,24 @@
 {{yield}}
-{{#carousel-container}}
-    {{#carousel-body}}
-        {{#each model.image as |image|}}
-            {{#carousel-item}}
-                <img src="{{image.url}}">
-            {{/carousel-item}}
-        {{/each}}
-    {{/carousel-body}}
-{{/carousel-container}}
+<label>
+    {{pikaday-input title="date_to_search" format="YYYY-MM-DD" placeholder="Select Earth Date" minDate=rover.landingDate maxDate=rover.maxDate}}
+</label>
+<label class="date-submit btn btn-primary" {{action "search_images" params=date_to_search}}>
+    Search Images on This Date
+</label>
+{{#if searchInProg}}
+    {{#carousel-container}}
+        {{#carousel-body}}
+            {{#each model.images as |image|}}
+                {{#carousel-item}}
+                    <img src="{{image.url}}">
+                {{/carousel-item}}
+            {{/each}}
+        {{/carousel-body}}
+        {{#carousel-arrow direction="left" tagName="button"}}
+            Slide Left
+        {{/carousel-arrow}}
+        {{#carousel-arrow direction="right" tagName="button"}}
+            Slide Right
+        {{/carousel-arrow}}
+    {{/carousel-container}}
+{{/if}}

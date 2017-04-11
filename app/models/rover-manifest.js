@@ -12,5 +12,5 @@ export default DS.Model.extend({
   totalPhotos: DS.attr('number'),
 
     cameras: DS.hasMany('camera'),
-    imaqes:DS.hasMany('images')
+    imaqes:DS.hasMany('image')
 });
